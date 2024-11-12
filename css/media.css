@@ -1,0 +1,200 @@
+/*====== sm: 640px ~ 768px ======*/
+@media screen and (min-width: 640px) {
+  /*====== Container ======*/
+  .container {
+    max-width: 85%;
+    padding-inline: 5px;
+  }
+
+  /*====== Header ======*/
+  .header .container {
+    padding: 40px 5px;
+  }
+
+  /*====== Footer ======*/
+  footer .subscription-group {
+    flex-flow: row wrap;
+    gap: 5px;
+  }
+}
+
+/*====== md: 768px ~ 1024px ======*/
+@media screen and (min-width: 768px) {
+  /*====== Container ======*/
+  .container {
+    max-width: 94%;
+  }
+
+  /*====== Chefs ======*/
+  .chefs-card {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .chefs-card .card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  /*====== Gallery ======*/
+  .gallery-photos {
+    columns: 2 auto;
+  }
+
+  /*====== Contact Us ======*/
+  .contact .details {
+    flex-flow: row wrap;
+  }
+
+  .details .inner-content {
+    flex-basis: calc((100% - 15px) / 2);
+  }
+
+  /*====== Footer ======*/
+  footer .container {
+    flex-flow: row wrap;
+  }
+
+  footer .container .about {
+    flex-basis: calc((100% - 20px) / 2);
+    order: 1;
+  }
+
+  footer .container .subscription {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  footer .container .contact-details {
+    flex-basis: calc((100% - 20px) / 2);
+    order: 1;
+  }
+}
+
+/*====== lg: 1024px ~ 1280px ======*/
+@media screen and (min-width: 1024px) {
+  /* ====== Container ======*/
+  .container {
+    max-width: 94%;
+  }
+
+  /*====== Header ======*/
+  .header .container {
+    flex-flow: row-reverse wrap;
+  }
+
+  .header .header-img,
+  .header .header-content {
+    width: 40%;
+    text-align: left;
+  }
+
+  .header-content h2 {
+    align-self: flex-start;
+  }
+
+  .header-content .btn-group {
+    justify-content: flex-start;
+  }
+
+  .btn-group .btn-main {
+    padding: 10px 25px;
+    border-radius: 0px 100vh 100vh;
+  }
+
+  /*====== Chefs ======*/
+  .chefs-card .card {
+    flex-basis: calc((100% - (30px * 2)) / 3);
+  }
+
+  /*====== Gallery ======*/
+  .gallery-photos {
+    columns: 3 auto;
+  }
+
+  /*====== Contact Us ======*/
+  .contact form .input-group {
+    flex-flow: row wrap;
+  }
+
+  .contact form .input-group input {
+    flex-basis: calc((100% - 15px) / 2);
+  }
+}
+
+/*====== xl: 1280px ~ 1536px ======*/
+@media screen and (min-width: 1280px) {
+  /* ====== Container ======*/
+  .container {
+    max-width: 89%;
+  }
+
+  /*====== Navbar ======*/
+  nav .container {
+    align-items: center;
+  }
+
+  nav .nav-links {
+    flex-flow: row wrap;
+    align-self: center;
+    position: static;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    transform: none;
+    border-left: none;
+    background-color: transparent;
+  }
+
+  nav .menu-icon {
+    display: none;
+  }
+
+  nav .mode-group {
+    margin: 0;
+  }
+
+  .nav-links .close-icon {
+    display: none;
+  }
+
+  nav .nav-links a {
+    padding: 5px 15px;
+  }
+
+  .nav-links li a::before {
+    left: 15px;
+  }
+
+  nav .nav-links li a:hover::before {
+    width: calc(100% - (15px * 2));
+  }
+
+  /*====== Header ======*/
+  header {
+    min-height: 100vh;
+  }
+
+  /*====== Footer ======*/
+  footer .container .about {
+    flex-basis: calc((100% - (20px * 2)) / 4);
+  }
+
+  footer .container .subscription {
+    flex-basis: calc((100% - (20px * 2)) / 2);
+  }
+
+  footer .container .contact-details {
+    flex-basis: calc((100% - (20px * 2)) / 4);
+    order: 2;
+  }
+}
+
+
+/*====== 2xl: >>1536px ======*/
+@media screen and (min-width: 1536px) {
+  /* ====== Container ======*/
+  .container {
+    max-width: 1320px;
+  }
+}

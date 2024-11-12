@@ -1,0 +1,182 @@
+/*====== Reusable Classes ======*/
+body:has(.mode:checked) .btn-main {
+  background-color: #c17e1f;
+  color: #171717;
+}
+
+body:has(.mode:checked) .btn-main:hover {
+  background-color: #d78c23;
+}
+
+body:has(.mode:checked) .logo {
+  color: #fff;
+}
+
+body:has(.mode:checked) .logo::after {
+  color: #c17e1f;
+}
+
+body:has(.mode:checked) .main-title h2 {
+  color: #9f9f9f;
+}
+
+body:has(.mode:checked) .main-title span {
+  color: #c17e1f;
+}
+
+/*====== Body ======*/
+body:has(.mode:checked) {
+  color: #fff;
+}
+
+body:has(.mode:checked):has(.nav-links:target) div.overlay {
+  background-color: hsl(0, 0%, 9%, 0.7);
+}
+
+/*====== Mode ======*/
+body:has(.mode:checked) .mode-group .dark {
+  display: none;
+}
+
+body:has(.mode:checked) .mode-group .light {
+  display: block;
+  color: #fff;
+}
+
+/*====== Navbar ======*/
+body:has(.mode:checked) nav {
+  background-color: #171717;
+}
+
+body:has(.mode:checked) nav .nav-links {
+  background-color: #171717;
+  border-color: #252525;
+}
+
+body:has(.mode:checked) .nav-links a {
+  color: #9f9f9f;
+}
+
+body:has(.mode:checked) nav .nav-links a:hover {
+  color: #fff;
+}
+
+body:has(.mode:checked) .nav-links li a::before {
+  background-color: #c17e1f;
+}
+
+body:has(.mode:checked) nav .menu-icon {
+  color: #fff;
+}
+
+body:has(.mode:checked) body:not(body:has(:target)) li a[href="#home"],
+body:has(.mode:checked):has(.header:target) li a[href="#home"],
+body:has(.mode:checked):has(.contact:target) li a[href="#contact"],
+body:has(.mode:checked):has(.gallery:target) li a[href="#gallery"],
+body:has(.mode:checked):has(.chefs:target) li a[href="#chefs"] {
+  color: #fff;
+}
+
+/*====== Header ======*/
+body:has(.mode:checked) header {
+  background-color: #252525;
+}
+
+body:has(.mode:checked) .header-content h2 {
+  color: #fff;
+}
+
+body:has(.mode:checked) .header-content p {
+  color: #9f9f9f;
+}
+
+body:has(.mode:checked) .video-btn {
+  color: #fff;
+}
+
+body:has(.mode:checked) .video-btn .icon {
+  background-image: linear-gradient(
+    to right,
+    #c17e1f 0 50%,
+    transparent 50% 100%
+  );
+}
+
+body:has(.mode:checked) .video-btn .icon::before {
+  background-color: #171717;
+}
+
+body:has(.mode:checked) .video-btn:hover {
+  color: #d78c23;
+}
+
+body:has(.mode:checked) .video-btn:hover span {
+  color: #d78c23;
+}
+
+/*====== Chefs ======*/
+body:has(.mode:checked) .chefs {
+  background-color: #202020;
+}
+
+body:has(.mode:checked) .chefs-card .card .item::before {
+  background-image: url(../images/team-shape-dark.svg);
+}
+
+body:has(.mode:checked) .chefs-card .card {
+  background-color: #171717;
+}
+
+body:has(.mode:checked) .card-content p,
+body:has(.mode:checked) .card-content span {
+  color: #9f9f9f;
+}
+
+/*====== Gallery ======*/
+body:has(.mode:checked) .gallery {
+  background-color: #252525;
+}
+
+/*====== Contact Us ======*/
+body:has(.mode:checked) .contact {
+  background-color: #202020;
+}
+
+body:has(.mode:checked) .contact form {
+  background-color: #171717;
+}
+
+body:has(.mode:checked) .contact form input,
+body:has(.mode:checked) .contact form textarea {
+  border-color: #000;
+}
+
+body:has(.mode:checked) .contact form input:focus,
+body:has(.mode:checked) .contact form textarea:focus {
+  border-color: #d78c23;
+}
+
+body:has(.mode:checked) .details .inner-content {
+  background-color: #0d0d0d;
+}
+
+body:has(.mode:checked) .details .inner-content h3 {
+  color: #adadad;
+}
+
+body:has(.mode:checked) .details .inner-content a {
+  color: #fff;
+}
+
+body:has(.mode:checked) .details .icon {
+  background-color: #c17e1f;
+}
+
+body:has(.mode:checked) .details .icon i {
+  color: #171717;
+}
+
+/*====== Footer ======*/
+body:has(.mode:checked) footer .contact-details ul li i {
+  color: #c17e1f;
+}
